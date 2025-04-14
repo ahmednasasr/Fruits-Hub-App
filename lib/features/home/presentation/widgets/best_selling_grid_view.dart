@@ -1,3 +1,5 @@
+import 'package:ecommerce_app/core/widgets/custom_button.dart';
+import 'package:ecommerce_app/core/widgets/fruit_item.dart';
 import 'package:flutter/material.dart';
 
 class BestSellingGridView extends StatelessWidget {
@@ -5,10 +7,15 @@ class BestSellingGridView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-
+    return SliverGrid.builder(
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2, childAspectRatio: 163/114,
+      mainAxisSpacing: 8,
+        crossAxisSpacing: 16
       ),
+      itemBuilder: (context, index) {
+        return FruitItem();
+      },
     );
   }
 }

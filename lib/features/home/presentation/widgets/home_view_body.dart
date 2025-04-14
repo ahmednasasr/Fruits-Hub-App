@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/core/widgets/search_text_field.dart';
+import 'package:ecommerce_app/features/home/presentation/widgets/best_selling_grid_view.dart';
 import 'package:ecommerce_app/features/home/presentation/widgets/best_selling_header.dart';
 import 'package:ecommerce_app/features/home/presentation/widgets/custom_home_appbar.dart';
 import 'package:ecommerce_app/features/home/presentation/widgets/featured_item.dart';
@@ -30,10 +31,12 @@ class HomeViewBody extends StatelessWidget {
 
                 FeaturedList(),
                 SizedBox(height: 12,),
-                BestSellingHeader()
+                BestSellingHeader(),
+                SizedBox(height: 8,),
               ],
             ),
-          )
+          ),
+          BestSellingGridView()
         ],
       ),
     );
