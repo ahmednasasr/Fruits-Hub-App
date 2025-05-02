@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/core/services/data_service.dart';
-import 'package:ecommerce_app/core/services/firebase.dart';
+import 'package:ecommerce_app/core/services/firebase_auth_service.dart';
 import 'package:ecommerce_app/core/services/firestore_servece.dart';
 import 'package:ecommerce_app/features/auth/data/repo/auth_repo_imp.dart';
 import 'package:ecommerce_app/features/auth/domain/repo/auth_repo.dart';

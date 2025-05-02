@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/core/services/firebase.dart';
+import 'package:ecommerce_app/core/services/firebase_auth_service.dart';
 import 'package:ecommerce_app/core/utils/app_color.dart';
 import 'package:ecommerce_app/core/utils/app_text_style.dart';
 import 'package:ecommerce_app/core/widgets/custom_button.dart';
